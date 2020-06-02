@@ -15,5 +15,12 @@ namespace Lab_8
            
         }
 
+        public override string Show()
+        {
+            string s = "Nombre: " + this.Name + "\r" + "Nombre Dueño: " + this.Name_Dueno + "\r" + "Horario:" + this.Horario;
+            s += "No tiene información adicional";
+            return s;
+        }
+
     }
 }

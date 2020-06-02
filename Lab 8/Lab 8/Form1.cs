@@ -101,7 +101,16 @@ namespace Lab_8
         private void buttonTodLoc_Click(object sender, EventArgs e)
         {
             TodosLocales todosLocales = new TodosLocales(controller.locales);
-            todosLocales.Show();
+            if (panel1.Contains(todosLocales) == false)
+            {
+                panel1.Controls.Add(todosLocales);
+                todosLocales.Dock = DockStyle.Fill;
+                todosLocales.BringToFront();
+            }
+            else
+            {
+                todosLocales.BringToFront();
+            }
         }
 
         private void buttonLocalVolver_Click(object sender, EventArgs e)

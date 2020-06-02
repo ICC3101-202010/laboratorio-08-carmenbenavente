@@ -17,13 +17,8 @@ namespace Lab_8
             InitializeComponent();
             foreach (Local j in locales)
             {
-                comboBoxTodosLocales.Items.Add(j.Name);
+                textBoxLista.Text += j.Show();
             }
-        }
-
-        private void comboBoxTodosLocales_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

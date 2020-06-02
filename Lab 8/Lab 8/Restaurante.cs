@@ -19,5 +19,18 @@ namespace Lab_8
 
         public bool Mesas { get => mesas; set => mesas = value; }
 
+        public override string Show()
+        {
+            string s = "Nombre: " + this.Name + "\r" + "Nombre Dueño: " + this.Name_Dueno + "\r" + "Horario:" + this.Horario;
+            if (mesas)
+            {
+                s += "Sí contiene mesas exclusivas";
+            }
+            else
+            {
+                s += "No contiene mesas exclusivas";
+            }
+            return s;
+        }
     }
 }

@@ -16,5 +16,15 @@ namespace Lab_8
         }
 
         public List<string> Categoria { get => categoria; set => categoria = value; }
+        public override string Show()
+        {
+            string s = "Nombre: " + this.Name + "\r" + "Nombre Dueño: " + this.Name_Dueno + "\r" + "Horario:" + this.Horario;
+            s += "Categorías: ";
+            foreach (string t in this.categoria)
+            {
+                s += t;
+            }
+            return s;
+        }
     }
 }

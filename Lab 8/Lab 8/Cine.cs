@@ -16,5 +16,11 @@ namespace Lab_8
         }
 
         public decimal Num_salas { get => num_salas; set => num_salas = value; }
+        public override string Show()
+        {
+            string s = "Nombre: " + this.Name + "\r" + "Nombre Dueño: " + this.Name_Dueno + "\r" + "Horario:" + this.Horario;
+            s += "Cantidad de salas: " + this.Num_salas.ToString();
+            return s;
+        }
     }
 }

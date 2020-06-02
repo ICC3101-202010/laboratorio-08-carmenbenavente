@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab_8
 {
-    public class Local
+    abstract public class Local
     {
         string name, name_Dueno, horario;
         int num;
@@ -24,9 +24,9 @@ namespace Lab_8
         public string Horario { get => horario; set => horario = value; }
         public int Num { get => num; set => num = value; }
         
-        public string Show()
+        public virtual string Show()
         {
-            string s = "Nombre: " + this.Name +"\r" + "Nombre Dueño: " + this.Name_Dueno +"\r" + "Horario:" + this.Horario;
+            string s = null;
             return s;
         }
     }

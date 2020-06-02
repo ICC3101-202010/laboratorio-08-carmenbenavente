@@ -28,31 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBoxTodosLocales = new System.Windows.Forms.ComboBox();
+            this.textBoxLista = new System.Windows.Forms.TextBox();
+            this.labelLista = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // comboBoxTodosLocales
+            // textBoxLista
             // 
-            this.comboBoxTodosLocales.FormattingEnabled = true;
-            this.comboBoxTodosLocales.Location = new System.Drawing.Point(54, 97);
-            this.comboBoxTodosLocales.Name = "comboBoxTodosLocales";
-            this.comboBoxTodosLocales.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxTodosLocales.TabIndex = 0;
-            this.comboBoxTodosLocales.SelectedIndexChanged += new System.EventHandler(this.comboBoxTodosLocales_SelectedIndexChanged);
+            this.textBoxLista.Location = new System.Drawing.Point(23, 34);
+            this.textBoxLista.Multiline = true;
+            this.textBoxLista.Name = "textBoxLista";
+            this.textBoxLista.Size = new System.Drawing.Size(184, 161);
+            this.textBoxLista.TabIndex = 0;
+            // 
+            // labelLista
+            // 
+            this.labelLista.AutoSize = true;
+            this.labelLista.Location = new System.Drawing.Point(3, 0);
+            this.labelLista.Name = "labelLista";
+            this.labelLista.Size = new System.Drawing.Size(110, 13);
+            this.labelLista.TabIndex = 1;
+            this.labelLista.Text = "Lista todos los locales";
             // 
             // TodosLocales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.comboBoxTodosLocales);
+            this.Controls.Add(this.labelLista);
+            this.Controls.Add(this.textBoxLista);
             this.Name = "TodosLocales";
             this.Size = new System.Drawing.Size(239, 239);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBoxTodosLocales;
+        private System.Windows.Forms.TextBox textBoxLista;
+        private System.Windows.Forms.Label labelLista;
     }
 }
