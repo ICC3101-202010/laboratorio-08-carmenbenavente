@@ -46,17 +46,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cine.cs" />
+    <Compile Include="Controller.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Local.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Recreacional.cs" />
     <Compile Include="Restaurante.cs" />
     <Compile Include="Tienda.cs" />
+    <Compile Include="TodosLocales.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TodosLocales.Designer.cs">
+      <DependentUpon>TodosLocales.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -64,6 +72,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TodosLocales.resx">
+      <DependentUpon>TodosLocales.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
